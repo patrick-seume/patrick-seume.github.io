@@ -14,6 +14,8 @@
             --accent: #38bdf8;
             --btn-bg: #1e293b;
             --btn-hover: #293548;
+            --card-bg: rgba(30, 41, 59, 0.5);
+            --border: rgba(255, 255, 255, 0.05);
         }
 
         body {
@@ -55,10 +57,20 @@
             line-height: 1.6;
             margin-bottom: 32px;
             text-align: left;
-            background: rgba(30, 41, 59, 0.5);
+            background: var(--card-bg);
             padding: 20px;
             border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border);
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-align: left;
+            margin: 32px 0 16px 0;
+            color: var(--text-main);
+            border-left: 3px solid var(--accent);
+            padding-left: 10px;
         }
 
         .links-wrapper {
@@ -95,40 +107,93 @@
             background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%);
             border: none;
         }
+
+        /* YouTube Responsive Embed Container */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            margin-bottom: 12px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Testimonials Styles */
+        .testimonial-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 18px;
+            border-radius: 12px;
+            text-align: left;
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .testimonial-meta {
+            margin-top: 10px;
+            font-size: 0.85rem;
+            color: var(--accent);
+            font-weight: 600;
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- Header Section -->
+        <!-- Header -->
         <h1 class="profile-title">Patrick Seume</h1>
         <div class="tagline">Boutique CS Mentoring & Software Engineering Coach</div>
 
-        <!-- Micro-Bio targeting your ideal clients -->
+        <!-- Pitch -->
         <div class="bio">
             I help developers break through growth plateaus to upskill into senior roles, and guide university students through the most brutal computer science coursework (OS, Compilers, Systems, and Advanced Algorithms) without losing their minds. High-touch, boutique mentorship tailored to execution.
         </div>
 
-        <!-- Action Links (Swap URLs out with your actual links) -->
+        <!-- Primary Action Links -->
         <div class="links-wrapper">
-            
             <a href="https://calendly.com" class="link-btn featured-btn" target="_blank" rel="noopener">
                 🎯 Book a 1:1 Mentorship Discovery Call
             </a>
-
             <a href="https://linkedin.com" class="link-btn" target="_blank" rel="noopener">
                 💼 Connect on LinkedIn
             </a>
-
-            <a href="https://github.com" class="link-btn" target="_blank" rel="noopener">
-                💻 View My GitHub Architecture
-            </a>
-
-            <a href="mailto:your-email@example.com" class="link-btn" target="_blank" rel="noopener">
-                ✉️ Inquire via Email
-            </a>
-            
         </div>
+
+        <!-- Free Training / Video Section -->
+        <div class="section-title">Free Training Videos</div>
+        <div class="video-container">
+            <!-- Swap out the embed URL 'xxxxxx' with your actual YouTube video ID -->
+            <iframe src="https://youtube.com" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="links-wrapper">
+            <a href="https://youtube.com" class="link-btn" style="font-size: 0.9rem; padding: 12px;" target="_blank" rel="noopener">
+                📺 Subscribe on YouTube for Weekly Deep Dives
+            </a>
+        </div>
+
+        <!-- Social Proof Section -->
+        <div class="section-title">Success Stories</div>
+        
+        <div class="testimonial-card">
+            "Patrick helped me break down complex multi-threading and systems concepts that my professor couldn't explain. I went from failing my operating systems class to an A- on the final."
+            <div class="testimonial-meta">— Alex M., CS Junior at UT Austin</div>
+        </div>
+
+        <div class="testimonial-card">
+            "As a mid-level engineer, I felt stuck. Patrick's technical deep-dives on system architecture helped me pass my senior engineering loop at a tier-1 tech company. Worth every penny."
+            <div class="testimonial-meta">— Sarah T., Senior Software Engineer</div>
+        </div>
+
     </div>
 
 </body>
