@@ -1,10 +1,135 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My GitHub Page</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <p>Welcome to my website hosted on GitHub Pages.</p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrick Seume | Elite CS Mentoring & Developer Upskilling</title>
+    <meta name="description" content="Boutique computer science mentoring. Demystifying the hardest university coursework and upskilling developers for senior roles.">
+    
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --btn-bg: #1e293b;
+            --btn-hover: #293548;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 580px;
+            text-align: center;
+        }
+
+        .profile-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.025em;
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            color: var(--accent);
+            font-weight: 500;
+            margin-bottom: 24px;
+        }
+
+        .bio {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 32px;
+            text-align: left;
+            background: rgba(30, 41, 59, 0.5);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .links-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .link-btn {
+            display: block;
+            padding: 16px 20px;
+            background-color: var(--btn-bg);
+            color: var(--text-main);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .link-btn:hover {
+            background-color: var(--btn-hover);
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .featured-btn {
+            background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+            border: none;
+        }
+        
+        .featured-btn:hover {
+            background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%);
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header Section -->
+        <h1 class="profile-title">Patrick Seume</h1>
+        <div class="tagline">Boutique CS Mentoring & Software Engineering Coach</div>
+
+        <!-- Micro-Bio targeting your ideal clients -->
+        <div class="bio">
+            I help developers break through growth plateaus to upskill into senior roles, and guide university students through the most brutal computer science coursework (OS, Compilers, Systems, and Advanced Algorithms) without losing their minds. High-touch, boutique mentorship tailored to execution.
+        </div>
+
+        <!-- Action Links (Swap URLs out with your actual links) -->
+        <div class="links-wrapper">
+            
+            <a href="https://calendly.com" class="link-btn featured-btn" target="_blank" rel="noopener">
+                🎯 Book a 1:1 Mentorship Discovery Call
+            </a>
+
+            <a href="https://linkedin.com" class="link-btn" target="_blank" rel="noopener">
+                💼 Connect on LinkedIn
+            </a>
+
+            <a href="https://github.com" class="link-btn" target="_blank" rel="noopener">
+                💻 View My GitHub Architecture
+            </a>
+
+            <a href="mailto:your-email@example.com" class="link-btn" target="_blank" rel="noopener">
+                ✉️ Inquire via Email
+            </a>
+            
+        </div>
+    </div>
+
+</body>
 </html>
