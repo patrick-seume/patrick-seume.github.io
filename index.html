@@ -7,6 +7,43 @@
     <meta name="description" content="Computer science mentoring. Demystifying the hardest university coursework and upskilling developers for senior roles.">
     
     <style>
+        /* CSS for the 2x2 Grid Layout */
+  .success-stories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 24px;
+    max-width: 900px;
+    margin: 2rem auto;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+
+  .review-card {
+    background-color: #121826; /* Dark background matching your site */
+    border: 1px solid #1f2937;
+    border-radius: 8px;
+    padding: 24px;
+    color: #d1d5db;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .review-text {
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+  }
+
+  .review-text strong {
+    color: #ffffff; /* Makes the premium keywords pop */
+    font-weight: 600;
+  }
+
+  .review-author {
+    color: #3b82f6; /* Blue accent matching your previous links */
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
         :root {
             --bg-color: #0f172a;
             --text-main: #f8fafc;
@@ -183,17 +220,41 @@
         <!-- Social Proof Section -->
         <div class="section-title">Success Stories</div>
         
-        <div class="testimonial-card">
-            "Patrick helped me break down complex multi-threading and systems concepts that my professor couldn't explain. I went from failing my operating systems class to an A- on the final."
-            <div class="testimonial-meta">— Alex M., CS Junior at UT Austin</div>
-        </div>
-
-        <div class="testimonial-card">
-            "As a mid-level engineer, I felt stuck. Patrick's technical deep-dives on system architecture helped me pass my senior engineering loop at a tier-1 tech company. Worth every penny."
-            <div class="testimonial-meta">— Sarah T., Senior Software Engineer</div>
-        </div>
-
+ <div class="success-stories-grid">
+  
+  <!-- Review 1: The Corporate Anchor -->
+  <div class="review-card">
+    <div class="review-text">
+      "I had a great experience learning with Patrick. He helped me prepare for an <strong>interview at Amazon, especially DSA, behavioral interview</strong>. His practical approach with mock interview and structure exercises was very effective."
     </div>
+    <div class="review-author">— Aleksandr</div>
+  </div>
+
+  <!-- Review 2: The Senior Complexity Proof -->
+  <div class="review-card">
+    <div class="review-text">
+      "We are working on a <strong>challenging and advanced project</strong>, however, he is capable of explaining in a very structured and clear way to diffuse anything I couldn't understand step-by-step."
+    </div>
+    <div class="review-author">— Gabi</div>
+  </div>
+
+  <!-- Review 3: The Technical Mastery Proof -->
+  <div class="review-card">
+    <div class="review-text">
+      "Patrick is a great teacher. He helped me with preparation for <strong>ITPEC FE exam</strong> (second part), he is very good at <strong>algorithm visualizations</strong> and his explanations were very clear. He is patient and attentive. I highly recommend him!"
+    </div>
+    <div class="review-author">— Daniel</div>
+  </div>
+
+  <!-- Review 4: The Communication Proof -->
+  <div class="review-card">
+    <div class="review-text">
+      "Patrick is a wonderful tutor with much patience, experience and knowledge. He has already helped me progress a lot, <strong>breaking things down into simple steps</strong> and clarifying any points of confusion with ease. He is reliable, well-prepared for each session, and clearly cares about his students’ success."
+    </div>
+    <div class="review-author">— v</div>
+  </div>
+
+</div>
 
 </body>
 </html>
